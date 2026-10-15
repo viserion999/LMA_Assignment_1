@@ -1,0 +1,250 @@
+{
+ "48b2b4fa1b3f1dc3848a4d4730ba28746a514f2efb1d164110b9aa2c6c934620": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 198.35255342896562
+ },
+ "afcc8ac54d68689c978571774039ca3cf06c049da521d60bdb76b8e9e5e2df4a": {
+  "answer": "No. A creature with defender can\u2019t attack (Rule 702.3b).",
+  "seconds": 341.5336006419966
+ },
+ "aa0eaadfcadc7614ef3d416f6e82f3e84fe0a1367fa075fa53da5802621665fa": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 480.02394691703375
+ },
+ "8d3dd95b5d8886b1faa3f1fa725ad0fc2b0c794ca74998f19d2a697756b8501e": {
+  "answer": "No. A creature with menace can't be blocked except by two or more creatures (Rule 702.111b).",
+  "seconds": 189.53824011306278
+ },
+ "a572fee0d8c64177961325e7b989847a5b2afcb6c09f0a133d226689ac950432": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 293.9317433050601
+ },
+ "a8a2688327c177ba91150d97d7ceeb3fc3eec2f23867dac1ed26f982da4d3a7b": {
+  "answer": "Yes. Attacking doesn\u2019t cause creatures with vigilance to tap (Rule 702.20b).",
+  "seconds": 25.46139337704517
+ },
+ "f020e8bdbd62b23a810ce2bab02e637a5f868984a1ba111abbdc6fa92c1b7824": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 11.569676405983046
+ },
+ "df7940f3601a238db8a6ed725934a442df6f7a42e771b3c37d9df3b4400ce3d9": {
+  "answer": "Based on the provided context, the fight keyword action works as follows:\n\n* When a spell or ability instructs a creature to fight another creature or two creatures to fight each other, each creature deals damage equal to its power to the other creature (Rule 701.14a).\n* If one or both creatures are no longer on the battlefield, are no longer creatures, or are illegal targets for the resolving spell or ability, neither creature fights or deals damage (Rule 701.14b).\n* If a creature fights itself, it deals damage to itself equal to twice its power (Rule 701.14c).\n* The damage dealt during a fight is not combat damage (Rule 701.14d).",
+  "seconds": 7.047258583945222
+ },
+ "d50575748ef273af0a3ba71db68bddeb0f3b0893808e3116d2cc4200d6df8406": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 24.267221883987077
+ },
+ "f3bdad13f0f6e8737a62594fa0f2e6584a53d343d7edce0f9b2b866c8b03f193": {
+  "answer": "Based on the provided context, the cleanup step is used for:\n\n1. The active player discarding cards to reduce their hand to their maximum hand size (Rule 514.1).\n2. Simultaneously removing all damage marked on permanents and ending all \"until end of turn\" and \"this turn\" effects (Rule 514.2).\n3. Performing state-based actions and putting triggered abilities onto the stack if any are waiting to be resolved, in which case players receive priority before another cleanup step begins (Rules 514.3a, 724.1f).",
+  "seconds": 167.64004219300114
+ },
+ "918ac2ee20a3a57f912c4790992ac2fcf1c62c29b53ac26ad7abcc25e0663d01": {
+  "answer": "Based on the provided context, an effect that allows a player to cast a spell without paying its mana cost applies an alternative cost to an unpayable cost, which may be paid (Rule 118.6a). \n\n*(Note: The provided context does not contain general rules detailing what happens when you try to cast any spell without paying its mana cost beyond this specific interaction with unpayable costs).*",
+  "seconds": 273.46402883401606
+ },
+ "05080bc944af92b2f3353e64d3614d30aa47a59437ed930ffbc51fe65a71fe4c": {
+  "answer": "Casting a spell \"without paying its mana cost\" applies an alternative cost rather than paying the spell's mana cost (Rule 118.9). This alternative cost does not change the spell's actual mana cost\u2014spells and abilities checking for it still see the original value (Rule 118.9c)\u2014and any additional costs, cost increases, or cost reductions still apply to it (Rule 118.9d). Additionally, if the spell had an unpayable cost (such as having no mana cost), applying this alternative cost allows it to be paid (Rule 118.6a).",
+  "seconds": 196.60493464302272
+ },
+ "3b370d01c311f9971dececb19e14b6c5729b4fd092292206f695971c33fafbe8": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 133.98982126894407
+ },
+ "7175c6613190d0a87afeaa87b40d90dcac6adec26434d20ed2c02a8ae6a089e4": {
+  "answer": "No. A permanent with indestructible can't be destroyed, isn't destroyed by lethal damage, and ignores the state-based action that checks for lethal damage (Rule 702.12b).",
+  "seconds": 97.9856304290006
+ },
+ "fd6be04978bf65e4767f241bf29a82a6ef7b9313555b169f4fdd855e6b7c9a19": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 2.7572407820262015
+ },
+ "064c859e55a425fe16403ed090f3559a33722804de6f00d78fde6ad865dfe58c": {
+  "answer": "According to rule 704.5j, you choose one of them, and the rest are put into their owners\u2019 graveyards (the \"legend rule\").",
+  "seconds": 60.198197782970965
+ },
+ "988e0846ae62a652e4a8686f2eb2d621480b95c24e40b495f96787ff0ed243bf": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 1.708085112972185
+ },
+ "1ab1d7f6e4c8d3ea06d061af97942a98c50b00bb981a3362c69b5c3807065dc1": {
+  "answer": "No, a creature with defender can't attack (702.3b).",
+  "seconds": 0.9872906520031393
+ },
+ "8bba9652d553a5f403c09747bd2928b86dd720405130bdfc8191281a2f8af56a": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 0.8633264759555459
+ },
+ "80e18161ea54eed4f1ff0f6fcbd0f1cda1686521c1ab9c5830579db5194fcd3d": {
+  "answer": "No. A creature with menace can't be blocked except by two or more creatures (Rule 702.111b).",
+  "seconds": 0.8533872809493914
+ },
+ "28f9ee7cbc60189887be4092a8640ae157355d92f1d94b25c046b63ee815e2d9": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 1.1859769739676267
+ },
+ "f5a778dcc34b63f69689a8c6c151cae1efd1a6a129940ab948fe74104698b1c3": {
+  "answer": "Yes, attacking doesn't cause creatures with vigilance to tap (702.20b).",
+  "seconds": 0.9744056760100648
+ },
+ "3c3fff199e0634296450a70969ce42dc82b6c45f11e2fa638a1171c135635bc3": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 1.018324938020669
+ },
+ "4fec5ee26d24ae9d08a7885b417e56e4d3858e95c771f4eae0a8be4d67733a4c": {
+  "answer": "Based on the provided context, when a spell or ability instructs creatures to fight, each of those creatures deals damage equal to its power to the other creature (rule 701.14a). This damage is not combat damage (rule 701.14d). If a creature fights itself, it deals damage to itself equal to twice its power (rule 701.14c). \n\nHowever, if one or both of the creatures are no longer on the battlefield, are no longer creatures, or are illegal targets for a resolving spell or ability that instructs them to fight, neither of them fights or deals damage (rule 701.14b).",
+  "seconds": 1.3162902219919488
+ },
+ "fd03a595e2d2c31933d72e3656f87c8222d9b0412b882a8e3ebd1468b20b48cd": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 0.8770013049943373
+ },
+ "266ca89816c1fdd9031044a6bbd5e0501248d45cae5b79656e9f1d959ec62a3d": {
+  "answer": "Based on the provided context, the cleanup step is used for the following turn-based actions and events:\n\n* The active player discards cards if their hand contains more cards than their maximum hand size (Rule 514.1).\n* All damage marked on permanents (including phased-out permanents) is removed, and all \"until end of turn\" and \"this turn\" effects end (Rule 514.2).\n* If state-based actions need to be performed and/or triggered abilities are waiting to be put onto the stack (including those triggering \"at the beginning of the next cleanup step\" or during the process of ending turns and phases), those actions are performed and those abilities are put on the stack, giving the active player priority to cast spells and activate abilities, followed by another cleanup step (Rules 514.3a, 724.1f).",
+  "seconds": 1.557260251021944
+ },
+ "ddbd16a82e0503d3041c53d8814d49f13c596d220982e39b6ad3822594f12e09": {
+  "answer": "If an alternative cost is applied to an unpayable cost, including an effect that allows a player to cast a spell without paying its mana cost, the alternative cost may be paid (Rule 118.6a).",
+  "seconds": 1.148523821029812
+ },
+ "e0b85233fbeeb47e9de764acf796200d35a146bffaef63f407a0a43af169e28c": {
+  "answer": "An alternative cost\u2014such as an effect that allows you to cast a spell without paying its mana cost\u2014may be paid even if the object has an unpayable mana cost (118.6a, 118.9).",
+  "seconds": 1.1460539060644805
+ },
+ "def55646bb72b51248077fa8364451c4674153b1d0519be8b016148761f7a99d": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 1.4029192659072578
+ },
+ "08ccaa920ad1b8f7657ff1df0f6871c4d71523b1eeaae3782682cb0d8106b56c": {
+  "answer": "No. Permanents with indestructible can't be destroyed, aren't destroyed by lethal damage, and ignore the state-based action that checks for lethal damage (rule 702.12b).",
+  "seconds": 1.9829810219816864
+ },
+ "a5f9ca9bc3a76e31e3b7a56da162437a766dab33a8430dc7029dad3b0060b4fb": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 1.2611105740070343
+ },
+ "6d24be55bd36b3982ed96f0c0aae7de5d7cddd0030fe85b993833bd309c828c9": {
+  "answer": "If you control two or more legendary permanents with the same name, you choose one of them, and the rest are put into their owners\u2019 graveyards (rule 704.5j).",
+  "seconds": 0.7449397930176929
+ },
+ "a66d6c62215cd5e60e59459e6f2b7e92fa2e3826c953dfe69077b58a856fa6cb": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 0.7011218100087717
+ },
+ "70c8e46218e9778e7a7f838020a40ccf8a70106f89e43c9f666f2aefb8fa2e80": {
+  "answer": "No. If a token is in a zone other than the battlefield (such as the graveyard), it ceases to exist (Rule 704.5d).",
+  "seconds": 0.8561336670536548
+ },
+ "3d93d87ffd2d8be94d114fd7c60c2f90227d64bee364869228db9cf716551bbc": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 1.308811702998355
+ },
+ "7e7ac1d8dfeb511a88b4d1eea754f4e68309707c3c19213c5f4015ea32ab9c22": {
+  "answer": "Whenever a permanent with ward becomes the target of a spell or ability an opponent controls, that spell or ability is countered unless that player pays the ward cost (702.21a).",
+  "seconds": 1.1537254570284858
+ },
+ "a04e1e0e1b0cca8b0be2247eb615faf017794b0a40a59b8f8f4caaa63f38a5e2": {
+  "answer": "If a planeswalker\u2019s loyalty is 0, it\u2019s put into its owner\u2019s graveyard (which is a state-based action) [306.9].",
+  "seconds": 1.0512384409084916
+ },
+ "8e0f051fb19a4001fed28e532be5111c9a2abc767a8057368473a8e08879fb87": {
+  "answer": "A planeswalker with 0 loyalty is put into its owner's graveyard as a state-based action (rules 306.9, 122.1e).",
+  "seconds": 0.6963715190067887
+ },
+ "82b8c7b248ef81796913fdfbb51f57caeac087af0c846c41a4ebe779025b84fb": {
+  "answer": "When all players pass in succession, the top (last-added) spell or ability on the stack resolves (rules 405.5, 608.1).",
+  "seconds": 1.3262766429688781
+ },
+ "e1bcf36042aa56081643a5353a491561da6cac8604a0d1d4bf7c99ee619fbb3d": {
+  "answer": "Each time all players pass in succession, the spell or ability on top of the stack resolves (rule 608.1).",
+  "seconds": 0.7366535139735788
+ },
+ "bc2a4d23e676236a7b95d2227bd33aa7d1dddf6ad2f49ba1389f7e5ba228b42d": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 0.6472452089656144
+ },
+ "3fc32eed329dee38d3e204a436fe68e6052fbc43c69eafb7b4525b2636500485": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 1.0920154420891777
+ },
+ "49601833dc16ae671ed9b42cb51182665b0644b0d8b137a0c08fba37adfca374": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 1.087882608990185
+ },
+ "c15b3d36e48f162fa0c8b8bfdbbb6e48ae499c1f865f28524d3b32d77678ff9d": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 0.5902612530626357
+ },
+ "d54ec0405cea97137c35259c6f1f700fdf1dddd65a2956befcd37f98aa91ecbb": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 1.1167789100436494
+ },
+ "3d923b0dccc34ffbbaa467f70a6e80f49f7cde9e5aa1e54d9c76a8501d5aaf89": {
+  "answer": "If a creature somehow has no value for its toughness, its toughness is 0 (rule 208.5). The provided context does not state what happens to a creature with 0 toughness beyond defining that its toughness is 0 if it has no value.",
+  "seconds": 0.7675186500418931
+ },
+ "6c1358c555656948b7b5296bb8ed319e79870a3147f4876b090e1d0d15c71c9e": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 1.6634615830844268
+ },
+ "ff3893ac33ca9d587b89abcb3a23984e94cd45cfa6c346227dd3a1c41d0e14ef": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 0.8133591980440542
+ },
+ "b67294e09372ae6bd98c27551f3ee09fecb470754346a27406e6b7944807f578": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 0.9490927960723639
+ },
+ "1a9b03303bde01a28257db6891697a9188fc30db3082adbea9b7ff314b723995": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 1.2525665339780971
+ },
+ "5900bcced8472a9e9a7dcaed9fcd2b0c7813e79ae8f31028cf8dbd9bbe5d400f": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 1.2495856300229207
+ },
+ "50c208813275f1f88c0fe0e3365bf07c48a8b67e89641fc71fbaac43b573a35b": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 1.1519010619958863
+ },
+ "bc1168217059932f121664dde9ba4bc37124a0466188bbd6d2991a480538b905": {
+  "answer": "No. If the player the Aura was attached to has left the game, the Aura is put into its owner's graveyard (rule 303.4c).",
+  "seconds": 1.1374610899947584
+ },
+ "356c06c8df7e6136a62971d9c3f5622e0fd070146e2c7cb3e4b324b3ca02a193": {
+  "answer": "The provided context does not answer this.",
+  "seconds": 0.7493458490353078
+ },
+ "132b8055b0541114583f9326404d8d737e6e8898cd03c3cdeb5a8c304d470dfb": {
+  "answer": "Yes, \"Hexproof\" on a permanent means it can't be the target of spells or abilities your *opponents* control (rule 702.11b).",
+  "seconds": 0.8249056100612506
+ },
+ "2fc3762fdda22593aeaced4c06619f2b9a32a137e70c018d625e6a269c56e213": {
+  "answer": "Yes. \"Hexproof\" on a permanent means \"This permanent can\u2019t be the target of spells or abilities your opponents control\" (rule 702.11b).",
+  "seconds": 1.0729651920264587
+ },
+ "81a9ee877e74dabbdc9881b6d239b5e517e3a2e4f6a8f752146cad9e9142d1de": {
+  "answer": "Yes, if a creature has haste, it can attack even if it hasn't been controlled by its controller continuously since their most recent turn began (702.10b).",
+  "seconds": 0.839694645954296
+ },
+ "6b3180c469e9bc75e2c04cf3181d496da226fd1e8c465af282e56e0df3e911fc": {
+  "answer": "Yes, if a creature has haste, it can attack even if it hasn\u2019t been controlled by its controller continuously since their most recent turn began (rule 702.10b).",
+  "seconds": 1.0955389310838655
+ },
+ "6b6e416a1c9b02e8f2b885fdad97768911fa6fef27d62f9e4757789cf091a373": {
+  "answer": "Once all creatures blocking it are assigned lethal damage, any excess damage is assigned as its controller chooses among those blocking creatures and the player, planeswalker, or battle the creature is attacking (Rule 702.19b). Alternatively, if there are no creatures blocking it when damage is assigned, its damage is assigned to the defending player and/or planeswalker as though all blocking creatures have been assigned lethal damage (Rule 702.19d).",
+  "seconds": 1.244694679044187
+ },
+ "223b88a08c3d18c3b1cb60888d70776a748b65ad1c21e76a5010bf296964ce6c": {
+  "answer": "Once all creatures blocking an attacking creature with trample are assigned lethal damage, any excess damage is assigned as its controller chooses among those blocking creatures and the player, planeswalker, or battle the creature is attacking (Rule 702.19b). Additionally, if there are no creatures blocking it when damage is assigned, its damage is assigned to the defending player and/or planeswalker as though all blocking creatures have been assigned lethal damage (Rule 702.19d).",
+  "seconds": 1.2393479329766706
+ },
+ "18e16f287c9a8c52755fc9e07047698913f0cc68bf5c3a343dd2e7a4b236c99a": {
+  "answer": "No, if all its targets are now illegal, the spell or ability doesn't resolve; it's removed from the stack and put into its owner's graveyard (for spells) [608.2b, 608.3b].",
+  "seconds": 7.6600140610244125
+ },
+ "88cc0fafc87b0a13577946acaee3b7e0e596ed722e172c0eac86b0e27acb9fb0": {
+  "answer": "No, the spell or ability doesn\u2019t resolve if all its targets are now illegal (rules 608.2b, 608.3b).",
+  "seconds": 1.3363563140155748
+ }
+}

@@ -1,0 +1,1106 @@
+{
+ "Q1": [
+  {
+   "candidates": [
+    896,
+    243,
+    323,
+    910,
+    553,
+    214,
+    909,
+    321,
+    245,
+    317
+   ],
+   "top3": [
+    896,
+    243,
+    323
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.02655231603421271,
+   "t_rerank": 0.0,
+   "t_llm": 1.708085112972185
+  },
+  {
+   "candidates": [
+    553,
+    214,
+    896,
+    323,
+    910,
+    317,
+    321,
+    909,
+    243,
+    245
+   ],
+   "top3": [
+    553,
+    214,
+    896
+   ],
+   "answer": "No, a creature with defender can't attack (702.3b).",
+   "t_retrieve": 0.02655231603421271,
+   "t_rerank": 0.6606322410516441,
+   "t_llm": 0.9872906520031393
+  }
+ ],
+ "Q2": [
+  {
+   "candidates": [
+    574,
+    214,
+    909,
+    327,
+    651,
+    330,
+    334,
+    571,
+    331,
+    575
+   ],
+   "top3": [
+    574,
+    214,
+    909
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.029170523048378527,
+   "t_rerank": 0.0,
+   "t_llm": 0.8633264759555459
+  },
+  {
+   "candidates": [
+    651,
+    327,
+    334,
+    574,
+    330,
+    575,
+    331,
+    909,
+    571,
+    214
+   ],
+   "top3": [
+    651,
+    327,
+    334
+   ],
+   "answer": "No. A creature with menace can't be blocked except by two or more creatures (Rule 702.111b).",
+   "t_retrieve": 0.029170523048378527,
+   "t_rerank": 0.5529091379139572,
+   "t_llm": 0.8533872809493914
+  }
+ ],
+ "Q3": [
+  {
+   "candidates": [
+    214,
+    332,
+    312,
+    572,
+    330,
+    309,
+    587,
+    310,
+    569,
+    321
+   ],
+   "top3": [
+    214,
+    332,
+    312
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.028406226891092956,
+   "t_rerank": 0.0,
+   "t_llm": 1.1859769739676267
+  },
+  {
+   "candidates": [
+    572,
+    214,
+    587,
+    310,
+    312,
+    321,
+    332,
+    309,
+    569,
+    330
+   ],
+   "top3": [
+    572,
+    214,
+    587
+   ],
+   "answer": "Yes, attacking doesn't cause creatures with vigilance to tap (702.20b).",
+   "t_retrieve": 0.028406226891092956,
+   "t_rerank": 0.6464030960341915,
+   "t_llm": 0.9744056760100648
+  }
+ ],
+ "Q4": [
+  {
+   "candidates": [
+    484,
+    508,
+    528,
+    497,
+    556,
+    551,
+    553,
+    536,
+    715,
+    725
+   ],
+   "top3": [
+    484,
+    508,
+    528
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.027959637925960124,
+   "t_rerank": 0.0,
+   "t_llm": 1.018324938020669
+  },
+  {
+   "candidates": [
+    497,
+    528,
+    508,
+    484,
+    536,
+    556,
+    553,
+    551,
+    715,
+    725
+   ],
+   "top3": [
+    497,
+    528,
+    508
+   ],
+   "answer": "Based on the provided context, when a spell or ability instructs creatures to fight, each of those creatures deals damage equal to its power to the other creature (rule 701.14a). This damage is not combat damage (rule 701.14d). If a creature fights itself, it deals damage to itself equal to twice its power (rule 701.14c). \n\nHowever, if one or both of the creatures are no longer on the battlefield, are no longer creatures, or are illegal targets for a resolving spell or ability that instructs them to fight, neither of them fights or deals damage (rule 701.14b).",
+   "t_retrieve": 0.027959637925960124,
+   "t_rerank": 0.6638458810048178,
+   "t_llm": 1.3162902219919488
+  }
+ ],
+ "Q5": [
+  {
+   "candidates": [
+    339,
+    343,
+    836,
+    341,
+    722,
+    300,
+    835,
+    292,
+    132,
+    342
+   ],
+   "top3": [
+    339,
+    343,
+    836
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.027207087026908994,
+   "t_rerank": 0.0,
+   "t_llm": 0.8770013049943373
+  },
+  {
+   "candidates": [
+    342,
+    343,
+    836,
+    132,
+    722,
+    339,
+    292,
+    341,
+    835,
+    300
+   ],
+   "top3": [
+    342,
+    343,
+    836
+   ],
+   "answer": "Based on the provided context, the cleanup step is used for the following turn-based actions and events:\n\n* The active player discards cards if their hand contains more cards than their maximum hand size (Rule 514.1).\n* All damage marked on permanents (including phased-out permanents) is removed, and all \"until end of turn\" and \"this turn\" effects end (Rule 514.2).\n* If state-based actions need to be performed and/or triggered abilities are waiting to be put onto the stack (including those triggering \"at the beginning of the next cleanup step\" or during the process of ending turns and phases), those actions are performed and those abilities are put on the stack, giving the active player priority to cast spells and activate abilities, followed by another cleanup step (Rules 514.3a, 724.1f).",
+   "t_retrieve": 0.027207087026908994,
+   "t_rerank": 0.6311675329925492,
+   "t_llm": 1.557260251021944
+  }
+ ],
+ "Q6": [
+  {
+   "candidates": [
+    120,
+    110,
+    349,
+    114,
+    117,
+    348,
+    107,
+    346,
+    356,
+    109
+   ],
+   "top3": [
+    120,
+    110,
+    349
+   ],
+   "answer": "If an alternative cost is applied to an unpayable cost, including an effect that allows a player to cast a spell without paying its mana cost, the alternative cost may be paid (Rule 118.6a).",
+   "t_retrieve": 0.028719063964672387,
+   "t_rerank": 0.0,
+   "t_llm": 1.148523821029812
+  },
+  {
+   "candidates": [
+    110,
+    114,
+    349,
+    346,
+    120,
+    348,
+    107,
+    109,
+    117,
+    356
+   ],
+   "top3": [
+    110,
+    114,
+    349
+   ],
+   "answer": "An alternative cost\u2014such as an effect that allows you to cast a spell without paying its mana cost\u2014may be paid even if the object has an unpayable mana cost (118.6a, 118.9).",
+   "t_retrieve": 0.028719063964672387,
+   "t_rerank": 0.8528584929881617,
+   "t_llm": 1.1460539060644805
+  }
+ ],
+ "Q11": [
+  {
+   "candidates": [
+    215,
+    132,
+    131,
+    560,
+    552,
+    213,
+    571,
+    126,
+    569,
+    128
+   ],
+   "top3": [
+    215,
+    132,
+    131
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.0295995440101251,
+   "t_rerank": 0.0,
+   "t_llm": 1.4029192659072578
+  },
+  {
+   "candidates": [
+    215,
+    132,
+    560,
+    131,
+    552,
+    128,
+    571,
+    569,
+    126,
+    213
+   ],
+   "top3": [
+    215,
+    132,
+    560
+   ],
+   "answer": "No. Permanents with indestructible can't be destroyed, aren't destroyed by lethal damage, and ignore the state-based action that checks for lethal damage (rule 702.12b).",
+   "t_retrieve": 0.0295995440101251,
+   "t_rerank": 0.6354455919936299,
+   "t_llm": 1.9829810219816864
+  }
+ ],
+ "Q13": [
+  {
+   "candidates": [
+    229,
+    801,
+    161,
+    494,
+    800,
+    727,
+    468,
+    745,
+    661,
+    569
+   ],
+   "top3": [
+    229,
+    801,
+    161
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.027519086957909167,
+   "t_rerank": 0.0,
+   "t_llm": 1.2611105740070343
+  },
+  {
+   "candidates": [
+    727,
+    229,
+    161,
+    494,
+    661,
+    745,
+    569,
+    468,
+    800,
+    801
+   ],
+   "top3": [
+    727,
+    229,
+    161
+   ],
+   "answer": "If you control two or more legendary permanents with the same name, you choose one of them, and the rest are put into their owners\u2019 graveyards (rule 704.5j).",
+   "t_retrieve": 0.027519086957909167,
+   "t_rerank": 1.0311748130479828,
+   "t_llm": 0.7449397930176929
+  }
+ ],
+ "Q27": [
+  {
+   "candidates": [
+    278,
+    476,
+    799,
+    279,
+    62,
+    800,
+    410,
+    64,
+    801,
+    726
+   ],
+   "top3": [
+    278,
+    476,
+    799
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.028551645926199853,
+   "t_rerank": 0.0,
+   "t_llm": 0.7011218100087717
+  },
+  {
+   "candidates": [
+    726,
+    799,
+    410,
+    476,
+    278,
+    800,
+    64,
+    279,
+    62,
+    801
+   ],
+   "top3": [
+    726,
+    799,
+    410
+   ],
+   "answer": "No. If a token is in a zone other than the battlefield (such as the graveyard), it ceases to exist (Rule 704.5d).",
+   "t_retrieve": 0.028551645926199853,
+   "t_rerank": 0.727452859049663,
+   "t_llm": 0.8561336670536548
+  }
+ ],
+ "Q33": [
+  {
+   "candidates": [
+    376,
+    379,
+    375,
+    367,
+    907,
+    572,
+    372,
+    368,
+    329,
+    365
+   ],
+   "top3": [
+    376,
+    379,
+    375
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.026914861984550953,
+   "t_rerank": 0.0,
+   "t_llm": 1.308811702998355
+  },
+  {
+   "candidates": [
+    572,
+    375,
+    376,
+    367,
+    379,
+    372,
+    368,
+    907,
+    365,
+    329
+   ],
+   "top3": [
+    572,
+    375,
+    376
+   ],
+   "answer": "Whenever a permanent with ward becomes the target of a spell or ability an opponent controls, that spell or ability is countered unless that player pays the ward cost (702.21a).",
+   "t_retrieve": 0.026914861984550953,
+   "t_rerank": 0.6459348469506949,
+   "t_llm": 1.1537254570284858
+  }
+ ],
+ "Q46": [
+  {
+   "candidates": [
+    282,
+    400,
+    72,
+    280,
+    405,
+    404,
+    233,
+    406,
+    403,
+    838
+   ],
+   "top3": [
+    282,
+    400,
+    72
+   ],
+   "answer": "When all players pass in succession, the top (last-added) spell or ability on the stack resolves (rules 405.5, 608.1).",
+   "t_retrieve": 0.02752747107297182,
+   "t_rerank": 0.0,
+   "t_llm": 1.3262766429688781
+  },
+  {
+   "candidates": [
+    400,
+    72,
+    404,
+    280,
+    282,
+    406,
+    403,
+    405,
+    233,
+    838
+   ],
+   "top3": [
+    400,
+    72,
+    404
+   ],
+   "answer": "Each time all players pass in succession, the spell or ability on top of the stack resolves (rule 608.1).",
+   "t_retrieve": 0.02752747107297182,
+   "t_rerank": 0.6804431660566479,
+   "t_llm": 0.7366535139735788
+  }
+ ],
+ "Q49": [
+  {
+   "candidates": [
+    219,
+    566,
+    217,
+    218,
+    267,
+    646,
+    485,
+    873,
+    887,
+    244
+   ],
+   "top3": [
+    219,
+    566,
+    217
+   ],
+   "answer": "No. If the player the Aura was attached to has left the game, the Aura is put into its owner's graveyard (rule 303.4c).",
+   "t_retrieve": 0.027487121988087893,
+   "t_rerank": 0.0,
+   "t_llm": 1.1374610899947584
+  },
+  {
+   "candidates": [
+    267,
+    873,
+    218,
+    217,
+    219,
+    566,
+    887,
+    485,
+    244,
+    646
+   ],
+   "top3": [
+    267,
+    873,
+    218
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.027487121988087893,
+   "t_rerank": 0.9464246130082756,
+   "t_llm": 0.7493458490353078
+  }
+ ],
+ "Q24": [
+  {
+   "candidates": [
+    214,
+    574,
+    331,
+    330,
+    327,
+    332,
+    909,
+    334,
+    575,
+    326
+   ],
+   "top3": [
+    214,
+    574,
+    331
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.02781086997129023,
+   "t_rerank": 0.0,
+   "t_llm": 0.6472452089656144
+  },
+  {
+   "candidates": [
+    574,
+    575,
+    334,
+    214,
+    331,
+    327,
+    330,
+    332,
+    326,
+    909
+   ],
+   "top3": [
+    574,
+    575,
+    334
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.02781086997129023,
+   "t_rerank": 0.6603262659627944,
+   "t_llm": 1.0920154420891777
+  }
+ ],
+ "Q26": [
+  {
+   "candidates": [
+    214,
+    574,
+    332,
+    909,
+    330,
+    331,
+    321,
+    571,
+    326,
+    569
+   ],
+   "top3": [
+    214,
+    574,
+    332
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.027404690976254642,
+   "t_rerank": 0.0,
+   "t_llm": 1.087882608990185
+  },
+  {
+   "candidates": [
+    574,
+    326,
+    214,
+    569,
+    571,
+    330,
+    331,
+    909,
+    332,
+    321
+   ],
+   "top3": [
+    574,
+    326,
+    214
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.027404690976254642,
+   "t_rerank": 0.6543365099932998,
+   "t_llm": 0.5902612530626357
+  }
+ ],
+ "Q28": [
+  {
+   "candidates": [
+    200,
+    197,
+    213,
+    196,
+    198,
+    492,
+    433,
+    199,
+    215,
+    35
+   ],
+   "top3": [
+    200,
+    197,
+    213
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.027485616970807314,
+   "t_rerank": 0.0,
+   "t_llm": 1.1167789100436494
+  },
+  {
+   "candidates": [
+    200,
+    433,
+    492,
+    197,
+    196,
+    35,
+    215,
+    199,
+    213,
+    198
+   ],
+   "top3": [
+    200,
+    433,
+    492
+   ],
+   "answer": "If a creature somehow has no value for its toughness, its toughness is 0 (rule 208.5). The provided context does not state what happens to a creature with 0 toughness beyond defining that its toughness is 0 if it has no value.",
+   "t_retrieve": 0.027485616970807314,
+   "t_rerank": 0.7882873290218413,
+   "t_llm": 0.7675186500418931
+  }
+ ],
+ "Q30": [
+  {
+   "candidates": [
+    209,
+    486,
+    747,
+    265,
+    208,
+    485,
+    497,
+    575,
+    901,
+    210
+   ],
+   "top3": [
+    209,
+    486,
+    747
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.028108778060413897,
+   "t_rerank": 0.0,
+   "t_llm": 1.6634615830844268
+  },
+  {
+   "candidates": [
+    486,
+    209,
+    208,
+    497,
+    485,
+    575,
+    210,
+    265,
+    747,
+    901
+   ],
+   "top3": [
+    486,
+    209,
+    208
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.028108778060413897,
+   "t_rerank": 0.6908109890064225,
+   "t_llm": 0.8133591980440542
+  }
+ ],
+ "Q41": [
+  {
+   "candidates": [
+    142,
+    143,
+    800,
+    570,
+    571,
+    35,
+    492,
+    331,
+    493,
+    140
+   ],
+   "top3": [
+    142,
+    143,
+    800
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.029879115987569094,
+   "t_rerank": 0.0,
+   "t_llm": 0.9490927960723639
+  },
+  {
+   "candidates": [
+    800,
+    142,
+    492,
+    493,
+    35,
+    143,
+    331,
+    571,
+    570,
+    140
+   ],
+   "top3": [
+    800,
+    142,
+    492
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.029879115987569094,
+   "t_rerank": 0.8304045519325882,
+   "t_llm": 1.2525665339780971
+  }
+ ],
+ "Q47": [
+  {
+   "candidates": [
+    214,
+    330,
+    331,
+    332,
+    574,
+    327,
+    909,
+    651,
+    575,
+    328
+   ],
+   "top3": [
+    214,
+    330,
+    331
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.026216640952043235,
+   "t_rerank": 0.0,
+   "t_llm": 1.2495856300229207
+  },
+  {
+   "candidates": [
+    214,
+    574,
+    575,
+    327,
+    330,
+    332,
+    331,
+    909,
+    328,
+    651
+   ],
+   "top3": [
+    214,
+    574,
+    575
+   ],
+   "answer": "The provided context does not answer this.",
+   "t_retrieve": 0.026216640952043235,
+   "t_rerank": 0.6531632340047508,
+   "t_llm": 1.1519010619958863
+  }
+ ],
+ "Q7": [
+  {
+   "candidates": [
+    559,
+    92,
+    401,
+    646,
+    214,
+    758,
+    402,
+    91,
+    89,
+    330
+   ],
+   "top3": [
+    559,
+    92,
+    401
+   ],
+   "answer": "Yes, \"Hexproof\" on a permanent means it can't be the target of spells or abilities your *opponents* control (rule 702.11b).",
+   "t_retrieve": 0.028531354037113488,
+   "t_rerank": 0.0,
+   "t_llm": 0.8249056100612506
+  },
+  {
+   "candidates": [
+    559,
+    401,
+    92,
+    758,
+    402,
+    89,
+    91,
+    646,
+    330,
+    214
+   ],
+   "top3": [
+    559,
+    401,
+    92
+   ],
+   "answer": "Yes. \"Hexproof\" on a permanent means \"This permanent can\u2019t be the target of spells or abilities your opponents control\" (rule 702.11b).",
+   "t_retrieve": 0.028531354037113488,
+   "t_rerank": 1.0322714429348707,
+   "t_llm": 1.0729651920264587
+  }
+ ],
+ "Q8": [
+  {
+   "candidates": [
+    558,
+    721,
+    223,
+    523,
+    646,
+    197,
+    518,
+    676,
+    592,
+    501
+   ],
+   "top3": [
+    558,
+    721,
+    223
+   ],
+   "answer": "Yes, if a creature has haste, it can attack even if it hasn't been controlled by its controller continuously since their most recent turn began (702.10b).",
+   "t_retrieve": 0.027397630037739873,
+   "t_rerank": 0.0,
+   "t_llm": 0.839694645954296
+  },
+  {
+   "candidates": [
+    558,
+    676,
+    592,
+    721,
+    197,
+    523,
+    223,
+    501,
+    646,
+    518
+   ],
+   "top3": [
+    558,
+    676,
+    592
+   ],
+   "answer": "Yes, if a creature has haste, it can attack even if it hasn\u2019t been controlled by its controller continuously since their most recent turn began (rule 702.10b).",
+   "t_retrieve": 0.027397630037739873,
+   "t_rerank": 0.7797093050321564,
+   "t_llm": 1.0955389310838655
+  }
+ ],
+ "Q9": [
+  {
+   "candidates": [
+    569,
+    571,
+    568,
+    570,
+    574,
+    909,
+    910,
+    334,
+    575,
+    896
+   ],
+   "top3": [
+    569,
+    571,
+    568
+   ],
+   "answer": "Once all creatures blocking it are assigned lethal damage, any excess damage is assigned as its controller chooses among those blocking creatures and the player, planeswalker, or battle the creature is attacking (Rule 702.19b). Alternatively, if there are no creatures blocking it when damage is assigned, its damage is assigned to the defending player and/or planeswalker as though all blocking creatures have been assigned lethal damage (Rule 702.19d).",
+   "t_retrieve": 0.028974954038858414,
+   "t_rerank": 0.0,
+   "t_llm": 1.244694679044187
+  },
+  {
+   "candidates": [
+    569,
+    571,
+    570,
+    575,
+    568,
+    574,
+    334,
+    910,
+    909,
+    896
+   ],
+   "top3": [
+    569,
+    571,
+    570
+   ],
+   "answer": "Once all creatures blocking an attacking creature with trample are assigned lethal damage, any excess damage is assigned as its controller chooses among those blocking creatures and the player, planeswalker, or battle the creature is attacking (Rule 702.19b). Additionally, if there are no creatures blocking it when damage is assigned, its damage is assigned to the defending player and/or planeswalker as though all blocking creatures have been assigned lethal damage (Rule 702.19d).",
+   "t_retrieve": 0.028974954038858414,
+   "t_rerank": 0.6355141700478271,
+   "t_llm": 1.2393479329766706
+  }
+ ],
+ "Q40": [
+  {
+   "candidates": [
+    232,
+    230,
+    201,
+    388,
+    43,
+    143,
+    231,
+    570,
+    941,
+    311
+   ],
+   "top3": [
+    232,
+    230,
+    201
+   ],
+   "answer": "If a planeswalker\u2019s loyalty is 0, it\u2019s put into its owner\u2019s graveyard (which is a state-based action) [306.9].",
+   "t_retrieve": 0.03053030592855066,
+   "t_rerank": 0.0,
+   "t_llm": 1.0512384409084916
+  },
+  {
+   "candidates": [
+    232,
+    143,
+    388,
+    230,
+    201,
+    570,
+    43,
+    941,
+    231,
+    311
+   ],
+   "top3": [
+    232,
+    143,
+    388
+   ],
+   "answer": "A planeswalker with 0 loyalty is put into its owner's graveyard as a state-based action (rules 306.9, 122.1e).",
+   "t_retrieve": 0.03053030592855066,
+   "t_rerank": 0.6830141589744017,
+   "t_llm": 0.6963715190067887
+  }
+ ],
+ "Q45": [
+  {
+   "candidates": [
+    401,
+    409,
+    408,
+    402,
+    93,
+    400,
+    869,
+    97,
+    870,
+    406
+   ],
+   "top3": [
+    401,
+    409,
+    408
+   ],
+   "answer": "No, if all its targets are now illegal, the spell or ability doesn't resolve; it's removed from the stack and put into its owner's graveyard (for spells) [608.2b, 608.3b].",
+   "t_retrieve": 0.028142980998381972,
+   "t_rerank": 0.0,
+   "t_llm": 7.6600140610244125
+  },
+  {
+   "candidates": [
+    401,
+    409,
+    93,
+    97,
+    870,
+    869,
+    402,
+    408,
+    400,
+    406
+   ],
+   "top3": [
+    401,
+    409,
+    93
+   ],
+   "answer": "No, the spell or ability doesn\u2019t resolve if all its targets are now illegal (rules 608.2b, 608.3b).",
+   "t_retrieve": 0.028142980998381972,
+   "t_rerank": 1.0254200069466606,
+   "t_llm": 1.3363563140155748
+  }
+ ]
+}
