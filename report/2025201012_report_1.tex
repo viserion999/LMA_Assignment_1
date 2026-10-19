@@ -13,7 +13,7 @@
 \titlespacing*{\section}{0pt}{8pt}{3pt}
 \titlespacing*{\subsection}{0pt}{6pt}{2pt}
 \setlist{itemsep=1pt,topsep=3pt,leftmargin=1.4em}
-\setlength{\parskip}{4pt}
+\setlength{\parskip}{3pt}
 \setlength{\parindent}{0pt}
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \newcommand{\code}[1]{\texttt{#1}}
@@ -23,6 +23,7 @@
 \author{Vikash Kumar \quad (Roll No.\ 2025201012)}
 \date{19 October 2026}
 
+\linespread{1.3}\selectfont
 \begin{document}
 \sloppy
 \vspace*{-1.4cm}
@@ -41,10 +42,10 @@
 \end{itemize}
 
 \section{Architecture comparison}
-\begin{itemize}
-  \item \textbf{Bi-Encoder:} encodes the question and each chunk \emph{separately} into one vector; relevance is their cosine similarity. Chunk vectors are computed once and indexed, so search is fast. But small words like ``can't'' or ``except'' get blurred inside one vector.
-  \item \textbf{Cross-Encoder:} reads the question and a chunk \emph{together}; self-attention runs across both texts, so it catches negations and conditions. Nothing can be precomputed: every pair needs its own forward pass.
-\end{itemize}
+A \textbf{Bi-Encoder} turns the question and each chunk into a vector \emph{separately}, and then compares them with cosine similarity. Because the chunk vectors do not depend on the question, I compute them once and store them in an index, so search is very fast. The weakness is that the whole chunk is squeezed into one vector, so small but important words like ``can't'' or ``except'' get lost.
+
+A \textbf{Cross-Encoder} reads the question and one chunk \emph{together} as a single input. Self-attention runs across the words of both texts, so the model can see how they relate and can catch negations and conditions. The cost is that nothing can be computed in advance: every question--chunk pair needs its own pass through the model.
+
 \textbf{Pipeline 1:} Question \ra{} Bi-Encoder + FAISS (top 10) \ra{} top 3 \ra{} Gemini \ra{} Answer~1.\\
 \textbf{Pipeline 2:} Question \ra{} Bi-Encoder + FAISS (top 10) \ra{} Cross-Encoder re-scores the same 10 \ra{} new top 3 \ra{} Gemini \ra{} Answer~2.
 
@@ -70,29 +71,29 @@ Hit@3 by type: keyword trap 0.70 \ra{} 1.00, exception 0.56 \ra{} 0.78, buried 0
 \small
 \begin{tabularx}{\linewidth}{llLc}
 \toprule
-ID & Type & Question (gold rule) & Rank: baseline \ra{} re-ranked \\
+ID & Type & Question (gold rule) & Rank change \\
 \midrule
 Q1  & Negation     & Can a creature with defender attack? (702.3b) & \#5 \ra{} \#1 \\
-Q2  & Exception    & Can a menace creature be blocked by just one creature? (702.111b) & \#5 \ra{} \#1 \\
-Q3  & Keyword trap & Can a vigilance creature attack without tapping? (702.20b) & \#4 \ra{} \#1 \\
+Q2  & Exception    & Can one creature block a menace creature? (702.111b) & \#5 \ra{} \#1 \\
+Q3  & Keyword trap & Does vigilance let a creature attack untapped? (702.20b) & \#4 \ra{} \#1 \\
 Q4  & Keyword trap & How does the fight keyword action work? (701.14a) & \#4 \ra{} \#1 \\
 Q5  & Buried       & What is the cleanup step used for? (514.1) & \#10 \ra{} \#1 \\
 Q6  & Exception    & Casting a spell without paying its mana cost (118.9) & \#4 \ra{} \#2 \\
-Q11 & Negation     & Is an indestructible creature destroyed by lethal damage? (702.12b) & \#4 \ra{} \#3 \\
+Q11 & Negation     & Does lethal damage destroy an indestructible creature? (702.12b) & \#4 \ra{} \#3 \\
 Q13 & Exception    & Two legendary creatures with the same name (704.5j) & \#6 \ra{} \#1 \\
-Q27 & Keyword trap & If a token creature dies, does it stay in the graveyard? (704.5d) & \#10 \ra{} \#1 \\
+Q27 & Keyword trap & Does a dead token stay in the graveyard? (704.5d) & \#10 \ra{} \#1 \\
 Q33 & Control      & What happens when ward triggers? (702.21a) & \#6 \ra{} \#1 \\
 Q46 & Control      & In what order do spells on the stack resolve? (405.5) & \textbf{\#1 \ra{} \#5} \\
-Q49 & Exception    & Does an Aura stay when the enchanted creature leaves? (303.4c) & \textbf{\#3 \ra{} \#4} \\
+Q49 & Exception    & Does an Aura stay when its creature leaves? (303.4c) & \textbf{\#3 \ra{} \#4} \\
 \bottomrule
 \end{tabularx}
 \end{center}
 
-\begin{itemize}
-  \item \textbf{Why the baseline missed:} it favours chunks that share words with the question. Q1's top 3 were general attack rules; ``defender can't attack'' was \#5. Q27 asks about a token that ``dies'' in the ``graveyard'', but the rule says it ``ceases to exist'' (\#10 \ra{} \#1).
-  \item \textbf{Where re-ranking hurt:} Q46 and Q49. The MS MARCO-trained re-ranker preferred an on-topic but less precise rule (e.g.\ 608.1 over 405.5 for stack order).
-  \item \textbf{Not in top 10} (Q24, Q26, Q28, Q30, Q41, Q47): when I ran the Cross-Encoder over all 971 chunks, it found Q26, Q41 at \#1 and Q24 at \#3, so those misses come from the Bi-Encoder. Q28, Q30, Q47 are missed by both models.
-\end{itemize}
+The baseline mostly failed because it prefers chunks that share words with the question, even when they do not answer it. For Q1, the top 3 were general attack rules, while the rule ``a creature with defender can't attack'' was only 5th. Q27 asks about a token that ``dies'' and goes to the ``graveyard'', but the rule uses different words: the token ``ceases to exist''. That chunk was 10th, and the Cross-Encoder moved it to 1st.
+
+Re-ranking did not always help. In Q46 and Q49 the Cross-Encoder picked a rule that was on topic but less exact, for example 608.1 instead of 405.5 for the order of the stack. It was trained on web search data (MS MARCO), so it sometimes prefers a passage that simply reads well.
+
+For six questions (Q24, Q26, Q28, Q30, Q41, Q47) the right chunk was not in the top 10, so re-ranking could not help. When I ran the Cross-Encoder over all 971 chunks, it found Q26 and Q41 at rank 1 and Q24 at rank 3, so those misses were caused by the Bi-Encoder. Q28, Q30 and Q47 were missed by both models.
 
 \subsection{Answer 1 vs.\ Answer 2}
 I generated answers for 23 questions (10 fixed, 2 hurt, 6 not in top 10, 5 controls).
@@ -125,11 +126,7 @@ Q46 (stack) & Correct: the last-added spell or ability resolves first (405.5). &
 \end{tabularx}
 \end{center}
 
-\begin{itemize}
-  \item \textbf{Hallucination:} none. When the key chunk was missing, the baseline refused (15 of 23) instead of inventing a rule. Re-ranking turned 9 refusals into correct answers.
-  \item \textbf{Misstated rule:} Q6. Without 118.9 in its top 3, the baseline answered from the wrong rule.
-  \item \textbf{Omitted clause:} Q46, but in Answer~2 (lost ``last in, first out''). Q49's Answer~2 refused.
-\end{itemize}
+The baseline did not hallucinate. Because the prompt tells Gemini to use only the given rules, it usually said ``the context does not answer this'' when the key chunk was missing (15 of 23 times). Re-ranking turned 9 of these refusals into correct answers. The baseline misstated a rule once, in Q6: rule 118.9 was not in its top 3, so it built the answer on the wrong rule. An essential clause was omitted in Q46, but this time in Answer~2, which left out ``last in, first out''. In Q49, Answer~2 refused even though Answer~1 was right.
 
 \section{Latency profiling}
 I ran everything on CPU only (8 cores). I timed retrieval over 230 runs after a warm-up; Gemini time is one call per query.
@@ -151,10 +148,10 @@ Gemini generation, Pipeline 2 & 1073.0 & 1050.7 & 1535.2 \\
 \end{tabular}
 \end{center}
 
-Re-ranking adds $\approx$0.7\,s per query: 25$\times$ the baseline search and 38\% of Pipeline~2's end-to-end time (CPU cost $\approx$50--70\,ms per pair; much less on a GPU).
+Re-ranking adds nearly 0.7\,s per query, which is about 25 times the baseline search time and 38\% of Pipeline~2's end-to-end time (each pair takes 50--70\,ms on CPU, much less on a GPU).
 
 \section{Scaling question}
-A Cross-Encoder's score depends on the question, so it cannot be precomputed. Scoring every chunk means $N$ forward passes per query. The cost I measured is linear at $\approx$49\,ms per pair (rows beyond 971 are extrapolated).
+A Cross-Encoder's score depends on the question, so it cannot be precomputed. Scoring every chunk means $N$ forward passes per query. The cost I measured is linear, at close to 49\,ms per pair (rows beyond 971 are extrapolated).
 
 \begin{center}
 \small
@@ -172,10 +169,10 @@ Chunks & Cross-Encoder over all chunks & Two-stage (Bi-Encoder + re-rank 10) \\
 
 \begin{center}
 \begin{tikzpicture}
-\begin{semilogyaxis}[width=0.7\linewidth,height=4.6cm,
+\begin{semilogyaxis}[width=0.62\linewidth,height=4cm,
   xlabel={Number of chunks},ylabel={Seconds per question},
   xmode=log,log basis x=10,ymin=0.1,ymax=2e6,
-  legend style={font=\footnotesize,at={(0.5,-0.42)},anchor=north,legend columns=2,draw=none},
+  legend style={font=\footnotesize,at={(0.5,-0.5)},anchor=north,legend columns=2,draw=none},
   ymajorgrids=true,grid style={gray!25},tick label style={font=\footnotesize}]
 \addplot[red!70,thick,mark=*] coordinates {(971,48) (1e5,4924) (1e6,49244) (1e7,492444)};
 \addplot[blue!70,thick,mark=square*] coordinates {(971,0.71) (1e5,0.72) (1e6,0.85) (1e7,2.09)};
@@ -184,15 +181,11 @@ Chunks & Cross-Encoder over all chunks & Two-stage (Bi-Encoder + re-rank 10) \\
 \end{tikzpicture}
 \end{center}
 
-\begin{itemize}
-  \item The Bi-Encoder does its heavy work once (indexing); each query is one encoding + a fast search.
-  \item So I use two stages: the Bi-Encoder narrows millions of chunks to 10, and the Cross-Encoder only orders those.
-  \item Trade-off: a recall ceiling. If stage one misses the gold chunk (Q24, Q26, Q41), stage two can't recover it.
-\end{itemize}
+The Bi-Encoder does its heavy work only once, when the index is built. After that, each question needs just one encoding and a fast search. That is why I use two stages: the Bi-Encoder quickly narrows the whole collection down to 10 chunks, and the slower Cross-Encoder only reorders those 10. The downside is that if the first stage misses the right chunk, as with Q24, Q26 and Q41, the second stage cannot bring it back.
 
 \textbf{Limitations:} I wrote and judged all 49 questions myself on one document; I corrected the gold lists for Q40 and Q49 after reading the answers; large-scale timings are extrapolated.
 
 \section*{Conclusion}
-Re-ranking raised Hit@3 from 0.67 to 0.84 and correct answers from 6 to 14 (of 23), mostly on negation, exception and keyword-trap questions. It costs about 0.7\,s per query on CPU, occasionally demotes the most precise rule, and cannot recover chunks missed by the first stage. The two-stage design gives the best balance of speed and accuracy.
+Re-ranking raised Hit@3 from 0.67 to 0.84 and correct answers from 6 to 14 (of 23), mostly on negation, exception and keyword-trap questions. It costs about 0.7\,s per query on CPU, sometimes demotes the most exact rule, and cannot recover chunks the first stage misses. Still, the two-stage design gives the best balance of speed and accuracy.
 
 \end{document}
