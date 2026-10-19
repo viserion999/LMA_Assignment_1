@@ -36,8 +36,8 @@ The notebook covers:
 │   ├── answers.json                  # Answer 1 / Answer 2 for the 23 final questions
 │   └── llm_cache.json                # cached Gemini responses (makes re-runs free and reproducible)
 ├── report/
-│   ├── implementation_analysis.tex   # report source
-│   └── implementation_analysis.pdf   # final report
+│   ├── 2025201012_report_1.tex   # report source
+│   └── 2025201012_report_1.pdf   # final report
 ├── PRD/RAG_LMA_Assignment_v1.pdf     # assignment brief
 └── requirements.txt
 ```
@@ -84,3 +84,12 @@ Notes:
 - With `results/llm_cache.json` present, no Gemini calls are made and the answers are reproduced exactly. Delete the file to regenerate the answers; the free tier is rate-limited, and the notebook retries with back-off.
 - The slowest parts on CPU are the latency and scaling sections; the scaling section alone scores all 971 chunks with the Cross-Encoder several times.
 - Timings depend on the machine.
+
+## Build the report
+
+```bash
+cd report
+pdflatex 2025201012_report_1.tex
+```
+
+This needs a LaTeX distribution with `pgfplots`, for example `sudo apt install texlive-latex-extra texlive-pictures`.
